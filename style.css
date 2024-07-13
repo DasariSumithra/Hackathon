@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    color: black;
+    padding: 5rem 2rem;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#services, #about, #contact, #payment, #chat, #map {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#chatBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+#messages {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+}
+
+#messageInput {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+#sendButton {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#paymentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+#paymentForm label, #paymentForm input {
+    width: 50%;
+    margin: 0.5rem 0;
+}
+
+#paymentForm button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#mapContainer {
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    form input, form textarea {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    form input, form textarea {
+        width: 90%;
+    }
+}
+iframe{
+    width: 80%;
+    height: 100%;
+}
